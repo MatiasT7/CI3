@@ -11,10 +11,10 @@
             color: #006064; /* Color de texto oscuro */
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 20px; /* Reducción de padding */
         }
         .container {
-            max-width: 500px; /* Ajuste del ancho del contenedor */
+            max-width: 90%; /* Ajuste del ancho del contenedor */
             margin: 0 auto;
             background-color: #ffffff; /* Fondo blanco para el contenedor */
             padding: 20px;
@@ -22,31 +22,35 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-size: 2em;
+            font-size: 1.8em; /* Ajuste del tamaño del encabezado */
             margin-bottom: 20px;
         }
         form {
             display: flex;
             flex-direction: column;
-            align-items: flex-start; /* Alinear a la izquierda */
+            align-items: stretch; /* Alinear a la izquierda */
             gap: 20px; /* Espaciado entre los elementos */
         }
         .form-group {
             display: flex;
-            align-items: center; /* Alinear verticalmente */
+            flex-direction: column; /* Cambio a columna para mejor diseño */
+            align-items: flex-start; /* Alinear a la izquierda */
         }
         label {
-            margin-right: 10px;
+            margin-bottom: 5px; /* Espaciado entre label y input */
         }
         select, input[type="number"] {
             padding: 10px;
             border: 1px solid #00acc1; /* Borde celeste */
             border-radius: 5px;
-            width: 200px; /* Ancho fijo */
+            width: 100%; /* Ancho completo */
+            max-width: 300px; /* Ancho máximo para inputs */
         }
         .button-group {
             display: flex;
+            flex-direction: column; /* Cambio a columna para mejor diseño */
             gap: 10px; /* Espacio entre botones */
+            align-items: center; /* Centrar botones */
         }
         button {
             background-color: #00acc1; /* Color del botón */
@@ -57,6 +61,8 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s;
+            width: 100%; /* Ancho completo */
+            max-width: 200px; /* Ancho máximo para botones */
         }
         button:hover {
             background-color: #00838f; /* Color del botón al pasar el ratón */
@@ -107,7 +113,7 @@
             </div>
             <div class="button-group">
                 <button type="button" id="calcular">Calcular Ingredientes</button>
-                <button onclick="window.location.href='inicio.html'">Volver a Inicio</button>
+                <button onclick="window.location.href='inicio.html'" type="button">Volver a Inicio</button>
             </div>
         </form>
 
