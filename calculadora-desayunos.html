@@ -11,25 +11,25 @@
             color: #006064; /* Color de texto oscuro */
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 20px; /* Reducción de padding */
+            padding: 20px;
         }
         .container {
             max-width: 90%; /* Ajuste del ancho del contenedor */
             margin: 0 auto;
             background-color: #ffffff; /* Fondo blanco para el contenedor */
-            padding: 20px;
+            padding: 30px; /* Aumentar padding */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-size: 1.8em; /* Ajuste del tamaño del encabezado */
+            font-size: 2em; /* Aumentar tamaño de encabezado */
             margin-bottom: 20px;
         }
         form {
             display: flex;
             flex-direction: column;
             align-items: stretch; /* Alinear a la izquierda */
-            gap: 20px; /* Espaciado entre los elementos */
+            gap: 25px; /* Espaciado aumentado */
         }
         .form-group {
             display: flex;
@@ -37,27 +37,29 @@
             align-items: flex-start; /* Alinear a la izquierda */
         }
         label {
-            margin-bottom: 5px; /* Espaciado entre label y input */
+            margin-bottom: 8px; /* Espaciado entre label y input */
+            font-size: 1.1em; /* Aumentar tamaño de fuente */
         }
         select, input[type="number"] {
-            padding: 10px;
+            padding: 12px; /* Aumentar padding */
             border: 1px solid #00acc1; /* Borde celeste */
             border-radius: 5px;
             width: 100%; /* Ancho completo */
             max-width: 300px; /* Ancho máximo para inputs */
+            font-size: 1em; /* Tamaño de fuente */
         }
         .button-group {
             display: flex;
             flex-direction: column; /* Cambio a columna para mejor diseño */
-            gap: 10px; /* Espacio entre botones */
+            gap: 15px; /* Espacio entre botones */
             align-items: center; /* Centrar botones */
         }
         button {
             background-color: #00acc1; /* Color del botón */
             color: white;
             border: none;
-            padding: 10px 20px;
-            font-size: 1em;
+            padding: 12px 20px; /* Aumentar padding */
+            font-size: 1.1em; /* Aumentar tamaño de fuente */
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s;
@@ -71,6 +73,20 @@
             margin-top: 20px;
             font-size: 1.2em;
             color: #004d40; /* Color del texto de resultado */
+        }
+
+        /* Media queries para pantallas más pequeñas */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em; /* Tamaño de encabezado más pequeño */
+            }
+            .container {
+                padding: 20px; /* Menos padding en pantallas pequeñas */
+            }
+            button {
+                padding: 10px; /* Ajustar padding */
+                font-size: 1em; /* Tamaño de fuente más pequeño */
+            }
         }
     </style>
 </head>
